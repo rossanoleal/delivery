@@ -9,8 +9,6 @@
 	 Status: 🚀 Concluido 🚀
 </h2>
 
-### Instruções iniciais
-
 <h3>Instruções iniciais</h3>
 
 Após fazer o Download e extrair o arquivo para um local seguro, será necessário fazer algumas alteraçoes no arquivo.
@@ -25,8 +23,6 @@ spring.datasource.password= Coloque a senha do seu banco
 
 spring.datasource.platform=h2
 
-### Pré-requisitos
-
 <h3> Pré-requisitos </h3>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -38,23 +34,29 @@ Além disto é bom ter um editor para trabalhar com o código como [Eclipse](htt
 <h3> Clients </h3>
 
 GET -> http://localhost:8080/clients
+
 POST -> http://localhost:8080/clients
+
 PUT -> http://localhost:8080/clients
+
 DEL -> http://localhost:8080/clients/delete/        (selecionar o id do cliente no final da url, exemplo: http://localhost:8080/clients/delete/1)
 
 <h3> Products </h3>
 
 GET -> http://localhost:8080/products
+
 POST -> http://localhost:8080/products
 
 <h3> Orders </h3>
 
 GET -> http://localhost:8080/orders
+
 POST -> http://localhost:8080/orders
 
 <h3> Payments </h3>
 
 GET -> http://localhost:8080/payments
+
 POST -> http://localhost:8080/payments
 
 <h3> Exemplos de Json utilizados </h3>
@@ -62,41 +64,66 @@ POST -> http://localhost:8080/payments
 <h3> Clients </h3>
 
 {
+
 	"name": "Rossano Leal",
+	
 	"cpf": "045.465.456-10",
+	
 	"phone": "(48) 9998-4433",
+	
 	"email": "rossano@gmail.com",
+	
 	"password": "123123",
+	
 	"address": {
+	
 		"street": "Rua velha",
+		
 		"number": 20
+		
 	}
+	
 }
 
 <h3> Products </h3>
 
 {
+
 	"description": "Pizza",
+	
 	"price": 30
+	
 }
+
 
 <h3> Orders </h3>
 
 {
+
 	"clientId": 1,
+	
 	"products": [
+	
 		{ "productId": 1, "quantity": 2},
+		
 		{ "productId": 2, "quantity": 1}
+		
 	]
+	
 }
 
 <h3> Payments </h3>
 
 {
+
 	"type": "CREDIT",
+	
 	"orders": {
+	
 		"id": 1
+		
 	}
+	
 }
 
 <h3> Autor </h3>
